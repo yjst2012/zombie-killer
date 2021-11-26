@@ -22,7 +22,7 @@ do
         ;;
         Z)
             zombie_count=$((zombie_count+1))
-            echo "$pid" >>zombie.txt
+            echo "killing $pid" >>zombie.txt
             kill -9 "$pid"
         ;;
     esac
